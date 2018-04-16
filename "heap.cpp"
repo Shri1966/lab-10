@@ -22,8 +22,7 @@ Maxheap::Maxheap(int capa){
  length=0;
  size=capa;
  arr= new int[capa];
- // node * temp = new node; 
-}
+ }
 
 
 void Maxheap::insert(int key){
@@ -55,10 +54,8 @@ void Maxheap::heap(int i){
  
  while(left(i)<length ){
  	
- if(right(i)==length){ //
-// cout << "i = " << arr[i] << endl;
-// cout << "lef(i)" << arr[left(i)] << endl;
-// if(left(i)<length){
+ if(right(i)==length)
+
   if(arr[left(i)]>arr[i]){
     swap(&arr[left(i)],&arr[i]);
     i=left(i);
